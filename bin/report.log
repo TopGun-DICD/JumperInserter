@@ -1,0 +1,144 @@
+JumperInserter v0.0.3
+
+====== Reading DEF file ======
+Skipping PINS section
+Skipping SPECIALNETS section
+DEF file statistics (in read items):
+  - Die is rect    : true
+  - Die area       : 61249040
+  - Rows           : 70
+  - Tracks         : 12
+  - VIAs specified : 4
+  - Components     : 3892
+  - Nets           : 168
+DEF file read in 242 msec
+
+====== Reading antenna violations report file ======
+   1 Net 'net13' (layer met1) for device _153_[::sky130_fd_sc_hd__mux2_1].A1
+   2 Net 'net14' (layer met1) for device _155_[::sky130_fd_sc_hd__mux2_1].A1
+   3 Net 'net18' (layer met1) for device output18[::sky130_fd_sc_hd__buf_2].A
+   4 Net 'net20' (layer met1) for device output20[::sky130_fd_sc_hd__buf_2].A
+   5 Net 'net23' (layer met1) for device output23[::sky130_fd_sc_hd__buf_2].A
+   6 Net 'net24' (layer met1) for device output24[::sky130_fd_sc_hd__buf_2].A
+   7 Net 'net7' (layer met1) for device _106_[::sky130_fd_sc_hd__o21ai_1].B1
+Antenna report read in 25 msec
+
+====== Searching for violated nets in DEF file ======
+  * net 'net13' found in DEF file [ position 138 ]
+    Area: '791.22' is bigger then allowd value of '400' [ x 1.97805 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [1] for metal met1 of type POINT found, deltaX=142140
+    > max delta (142140) found for index 1
+    Analyzing metallization intersections for net13 (8970, 190910) -> (151110, *)
+      - Intersecting segment at layer met2: (149730, 183430) -> (149730, 191930) 
+      - Intersecting segment at layer met2: (150650, 180710) -> (150650, 191250) 
+      - Intersecting segment at layer met2: (8970, 13090) -> (8970, 190910) 
+      - Intersecting segment at layer met2: (123970, 181050) -> (123970, 200430) 
+      - Intersecting segment at layer met2: (139610, 181050) -> (139610, 200770) 
+      - Intersecting segment at layer met2: (140070, 172210) -> (140070, 199070) 
+      - Intersecting segment at layer met2: (139150, 175270) -> (139150, 197030) 
+      - Intersecting segment at layer met2: (141910, 170170) -> (141910, 194990) 
+      ! 8 intersecting segments found
+  * net 'net14' found in DEF file [ position 139 ]
+    Area: '652.44' is bigger then allowd value of '400' [ x 1.6311 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [1] for metal met1 of type POINT found, deltaX=690
+      record [2] for metal met1 of type POINT found, deltaY=340
+      record [3] for metal met1 of type POINT found, deltaX=75900
+      record [4] for metal met1 of type POINT found, deltaY=340
+      record [5] for metal met1 of type POINT found, deltaX=39330
+    > max delta (75900) found for index 3
+    Analyzing metallization intersections for net14 (34500, 178330) -> (110400, *)
+      ! No intersecting segments found
+  * net 'net18' found in DEF file [ position 143 ]
+    Area: '560.18' is bigger then allowd value of '400' [ x 1.40045 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [0] for metal met1 of type POINT found, deltaX=1840
+      record [1] for metal met1 of type POINT found, deltaX=126960
+      record [2] for metal met1 of type POINT found, deltaY=340
+      record [3] for metal met1 of type POINT found, deltaX=15640
+      record [4] for metal met1 of type POINT found, deltaY=680
+      record [5] for metal met1 of type POINT found, deltaX=2760
+      record [7] for metal met1 of type POINT found, deltaY=680
+      record [8] for metal met1 of type POINT found, deltaX=18400
+      record [13] for metal met1 of type POINT found, deltaX=6440
+    > max delta (126960) found for index 1
+    Analyzing metallization intersections for net18 (9430, 66470) -> (136390, *)
+      - Intersecting segment at layer met2: (33810, 13090) -> (33810, 177990) 
+      - Intersecting segment at layer met2: (136390, 66470) -> (136390, 166430) 
+      - Intersecting segment at layer met2: (135010, 12070) -> (135010, 180710) 
+      ! 3 intersecting segments found
+  * net 'net20' found in DEF file [ position 146 ]
+    Area: '576.38' is bigger then allowd value of '400' [ x 1.44095 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [0] for metal met1 of type POINT found, deltaX=920
+      record [2] for metal met1 of type POINT found, deltaX=7360
+      record [3] for metal met1 of type POINT found, deltaY=340
+      record [4] for metal met1 of type POINT found, deltaX=4600
+      record [7] for metal met1 of type POINT found, deltaX=1380
+      record [8] for metal met1 of type POINT found, deltaX=130640
+      record [9] for metal met1 of type POINT found, deltaX=8280
+    > max delta (130640) found for index 8
+    Analyzing metallization intersections for net20 (9430, 164390) -> (140070, *)
+      - Intersecting segment at layer met2: (139610, 30430) -> (139610, 167110) 
+      - Intersecting segment at layer met2: (33810, 13090) -> (33810, 177990) 
+      - Intersecting segment at layer met2: (137310, 12410) -> (137310, 167450) 
+      - Intersecting segment at layer met2: (136390, 66470) -> (136390, 166430) 
+      - Intersecting segment at layer met2: (140070, 164390) -> (140070, 167110) 
+      - Intersecting segment at layer met2: (135010, 12070) -> (135010, 180710) 
+      ! 6 intersecting segments found
+  * net 'net23' found in DEF file [ position 149 ]
+    Area: '576.38' is bigger then allowd value of '400' [ x 1.44095 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [0] for metal met1 of type POINT found, deltaX=130640
+      record [2] for metal met1 of type POINT found, deltaX=1840
+      record [4] for metal met1 of type POINT found, deltaX=230
+      record [10] for metal met1 of type POINT found, deltaX=22540
+    > max delta (130640) found for index 0
+    Analyzing metallization intersections for net23 (9430, 131750) -> (140070, *)
+      - Intersecting segment at layer met2: (139610, 30430) -> (139610, 167110) 
+      - Intersecting segment at layer met2: (33810, 13090) -> (33810, 177990) 
+      - Intersecting segment at layer met2: (137310, 12410) -> (137310, 167450) 
+      - Intersecting segment at layer met2: (136390, 66470) -> (136390, 166430) 
+      - Intersecting segment at layer met2: (135010, 12070) -> (135010, 180710) 
+      - Intersecting segment at layer met2: (140070, 131750) -> (140070, 158700) 
+      - Intersecting segment at layer met2: (9430, 99790) -> (9430, 159290) 
+      ! 7 intersecting segments found
+  * net 'net24' found in DEF file [ position 150 ]
+    Area: '553.66' is bigger then allowd value of '400' [ x 1.38415 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [0] for metal met1 of type POINT found, deltaY=680
+      record [1] for metal met1 of type POINT found, deltaX=11960
+      record [2] for metal met1 of type POINT found, deltaY=680
+      record [5] for metal met1 of type POINT found, deltaX=124660
+      record [6] for metal met1 of type POINT found, deltaX=39100
+    > max delta (124660) found for index 5
+    Analyzing metallization intersections for net24 (14950, 200770) -> (139610, *)
+      - Intersecting segment at layer met2: (138690, 200430) -> (138690, 209100) 
+      - Intersecting segment at layer met2: (45310, 200430) -> (45310, 209100) 
+      - Intersecting segment at layer met2: (77510, 200430) -> (77510, 209100) 
+      - Intersecting segment at layer met2: (106490, 199070) -> (106490, 209100) 
+      - Intersecting segment at layer met2: (139610, 181050) -> (139610, 200770) 
+      ! 5 intersecting segments found
+  * net 'net7' found in DEF file [ position 156 ]
+    Area: '464.18' is bigger then allowd value of '400' [ x 1.16045 ]
+    Will create 2 segments (1 cut(s) to be done)
+      record [2] for metal met1 of type POINT found, deltaX=2760
+      record [3] for metal met1 of type POINT found, deltaX=131100
+    > max delta (131100) found for index 3
+    Analyzing metallization intersections for net7 (9430, 159290) -> (140530, *)
+      - Intersecting segment at layer met2: (139610, 30430) -> (139610, 167110) 
+      - Intersecting segment at layer met2: (33810, 13090) -> (33810, 177990) 
+      - Intersecting segment at layer met2: (137310, 12410) -> (137310, 167450) 
+      - Intersecting segment at layer met2: (136390, 66470) -> (136390, 166430) 
+      - Intersecting segment at layer met2: (135010, 12070) -> (135010, 180710) 
+      - Intersecting segment at layer met2: (9430, 99790) -> (9430, 159290) 
+      ! 6 intersecting segments found
+100% of violated nets found
+Number of fixed violations : 0 (of 7 violations total)
+Number of leaved violations: 7 (of 7 violations total)
+Antenna voilations fixed in 17 msec
+
+====== Writing DEF file ======
+DEF file written in 100 msec
+

@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+build/msvs2019/.vs/
+build/msvs2019/x64/
